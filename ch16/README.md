@@ -182,7 +182,7 @@ private:
 * (b) 非法。应该为 `template <typename T> T f2(int &t);`
 * (c) 非法。应该为 `template <typename T> inline T foo(T, unsigned int*);`
 * (d) 非法。应该为 `template <typename T> T f4(T, T);`
-* (e) 非法。Ctype 被隐藏了。
+* (e) 非法。Ctype 被隐藏了。// 合法，虽然Ctype 被隐藏了，但是在模板函数声明时的Ctype是模板参数。
 
 ## 练习16.19
 
