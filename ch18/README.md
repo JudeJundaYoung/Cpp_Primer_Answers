@@ -7,6 +7,9 @@
 (b) exception *p = &r;
 	throw *p;
 ```
+(a)异常对象类型为range error.
+(b)异常对象类型为exception.
+因为range error为exception的派生类，解引用基类指针会使得抛出对象类型成为基类。
 
 ## 练习18.2
 
